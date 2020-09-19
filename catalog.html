@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-  	<header>
-  		<h1>DEVICE</h1>
-  		<img src="" width="163" height="35" alt="Логотип сайта «Девайс»">
-  		<nav>
-  			<ul>
-  				<li><button type="button">Поиск по сайту</button></li>
-          <li><a href="">Профиль</a></li>
-  				<li><a href="">Выйти</a></li>
-  				<li><a href="">Сравнить</a></li>
-  				<li><a href="">Корзина</a></li>
-  			</ul>
-  		</nav>
-  		<nav>
-  			<ul>
-  				<li><a href="catalog.html">Каталог товаров</a></li>
-  				<li><a href="">Доставка</a></li>
-  				<li><a href="">Гарантия</a></li>
-  				<li><a href="">Контакты</a></li>
-  			</ul>
-  		</nav>	
-  	</header>
+  <body class="page-body inner-page">
+  	<header class="main-header">
+      <h1>DEVICE</h1>
+      <a href="" class="main-header-logo"><img src="" width="163" height="35" alt="Логотип сайта «Девайс»"></a>
+      <nav class="header-navigation">
+        <ul class="header-login">
+          <li><button type="button">Поиск по сайту</button></li>
+          <li><a class="login-link" href="">Войти</a></li>
+          <li><a href="">Сравнить</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+      </nav>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
   	<main>
   		<section>
-  			<h1>Наименование раздела с товаром</h1>
-  			<nav>
+  			<h1 class="slider-bolder-text">Моноподы для селфи</h1>
+  			<nav class="nav-menu">
   				<ul>
   					<li><a href="index.html">Главная</a></li>
   					<li><a href="catalog.html">Каталог товаров</a></li>
@@ -70,39 +71,39 @@
         </ul>
       </section>
   	</main>
-  	<footer>
-  		<h2>Навигация по сайту</h2>
+  	<footer class="page-footer main-footer">
+      <h2>Навигация по сайту</h2>
       <section>
         <img src="" width="163" height="35" alt="Логотип сайта «Девайс»">
-          <nav><ul>
-            <li><a href="">Профиль</a></li>
-            <li><a href="">Выйти</a></li>
-            <li><a href="">Сравнить</a></li>
-            <li><a href="">Корзина</a></li>
-            </ul>
-          </nav>
+          <nav class="footer-login">
+            <ul class="footer-login-site">
+              <li><a href="">Войти</a></li>
+              <li><a href="">Сравнить</a></li>
+              <li><a href="">Корзина</a></li>
+          </ul>
+            </nav>
         </section>
         <section>
-          <nav>
-            <ul>
+          <nav class="footer-navigation">
+            <ul class="footer-navigation-site">
               <li><a href="">Доставка</a></li>
               <li><a href="">Гарантия</a></li>
               <li><a href="">Контакты</a></li>
             </ul>
           </nav>
         </section>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <section>
+        <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+        <p class="footer-contacts">Тел.: <a class="contact-phone" href="tel: +74954959595">+7 (495) 495-95-95</a></p>
+        <section class="footer-social">
           <h2>Социальные сети</h2>
           <ul>
-            <li><a href=""><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Вконтакте"></a></li>
-            <li><a href=""><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Инстаграм"></a></li>
-            <li><a href=""><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Твиттер"></a></li>
+            <li><a class="social-button" href=""><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Вконтакте"></a></li>
+            <li><a class="social-button" href=""><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Инстаграм"></a></li>
+            <li><a class="social-button" href=""><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Твиттер"></a></li>
           </ul>
         </section>
         <h2>Лого HMTL-academy</h2>
-        <p><img src="https://via.placeholder.com/27x34" width="27" height="34"></p>
-  	</footer>
+        <p class="footer-copyright"><img src="https://via.placeholder.com/27x34" width="27" height="34"></p>
+    </footer>
   </body>
  </html>

@@ -263,3 +263,12 @@ img {
 .contact-phone {
 	color: inherit;
 }
+
+/* Catalog */
+.nav-menu {
+	font-family: "Opensans", Arial, san-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+	opacity: 0.3;
+}
