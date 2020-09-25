@@ -33,18 +33,28 @@
         <!-- First slider -->
         <h2 hidden="">Товар и его описание</h2>
         <section class="product-features-1">
-          <img src="img/slider-1-1.png" width="384" height="486" alt="Палка для селфи">
-  		    <p class="slider-features"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
-  	      <p class="slider-property">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <h2 hidden="">Характеристики товара</h2>
-          <div class="product-features-value">
-            <span>8,5 м</span><span>5 кг</span><span>Карбон</span>
+          <div class="features-grid-left">
+            <img src="img/slider-1-1.png" width="384" height="486" alt="Палка для селфи">
           </div>
-          <div class="product-features-property">
-            <span>Длина палки</span><span>Вес палки</span><span>Материал</span>
+          <div class="features-grid-right">
+            <p class="slider-features"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
+            <p class="slider-property">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <h2 hidden="">Характеристики товара</h2>
+            <div class="product-features-value">
+            <span>8,5 м</span><span>5 кг</span><span>Карбон</span>
+            </div>
+            <div class="product-features-property">
+            <span> Длина палки</span><span> Вес палки</span><span> Материал</span>
+            </div>
+            <p><button class="button-yellow">Подробнее</button>
+            <button class="radio-button" type="button" disabled></button>
+            <button class="radio-button" type="button"></button>
+            <button class="radio-button" type="button"></button>
+            </p>
           </div>
         </section>
         <!-- Second slider -->
+        <!--
         <section class="product-features-2">
           <img src="img/slider-2-1.png" width="345" height="485" alt="Фитнес-браслет">
           <p class="slider-features"><b>Худеем<br>правильно!</b></p>
@@ -57,7 +67,9 @@
             <span>Без подзарядки</span>
           </div>
         </section>
+        -->
         <!--Third slider -->
+        <!--
         <section class="product-features-3">
           <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
           <p class="slider-features"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
@@ -70,33 +82,29 @@
             <span>Дальность полёта</span><span>Радиус поражения</span>
           </div>
         </section>
+        -->
       </section>
-      <p><button class="button-yellow">Подробнее</button>
-        <button class="radio-button" type="button" disabled></button>
-        <button class="radio-button" type="button"></button>
-        <button class="radio-button" type="button"></button>
-      </p>
   	  <section>
   	    <h2 hidden="">Навигация по сайту</h2>
   	    <nav>
           <ul class="site-menu">
             <li>
-              <a href=""><img src="img/popular-1.svg" width="160" height="160" alt="Виртуальная реальность"><p><h3>Виртуальная реальность</h3></p></a>
+              <div><a href=""><img src="img/popular-1.svg" width="160" height="160" alt="Виртуальная реальность"><p><h3>Виртуальная реальность</h3></p></a></div>
   	    		</li>
   	    		<li>
-  	    			<a href=""><img src="img/popular-2.svg" width="160" height="160" alt="Моноподы для селфи"><p><h3>Моноподы для селфи</h3></p></a>
+  	    			<div><a href=""><img src="img/popular-2.svg" width="160" height="160" alt="Моноподы для селфи"><p><h3>Моноподы для селфи</h3></p></a></div>
   	    		</li>
   	    		<li>
-  	    			<a href=""><img src="img/popular-3.svg" width="160" height="160" alt="Экшн-камеры"><p><h3>Экшн-камеры</h3></p></a>
+  	    			<div><a href=""><img src="img/popular-3.svg" width="160" height="160" alt="Экшн-камеры"><p><h3>Экшн-камеры</h3></p></a></div>
   	    		</li>
   	    		<li>
-  	    			<a href=""><img src="img/popular-4.svg" width="160" height="160" alt="Фитнес-браслеты"><p><h3>Фитнес-браслеты</h3></p></a>
+  	    			<div><a href=""><img src="img/popular-4.svg" width="160" height="160" alt="Фитнес-браслеты"><p><h3>Фитнес-браслеты</h3></p></a></div>
   	    		</li>
   	    		<li>
-  	    			<a href=""><img src="img/popular-5.svg" width="160" height="160" alt="Умные часы"><p><h3>Умные часы</h3></p></a>
+  	    			<div><a href=""><img src="img/popular-5.svg" width="160" height="160" alt="Умные часы"><p><h3>Умные часы</h3></p></a></div>
   	    		</li>
   	    		<li>
-  	    			<a href=""><img src="img/popular-6.svg" width="160" height="160" alt="Квадрокоптеры"><p><h3>Квадрокоптеры</h3></p></a>
+  	    			<div><a href=""><img src="img/popular-6.svg" width="160" height="160" alt="Квадрокоптеры"><p><h3>Квадрокоптеры</h3></p></a></div>
   	    		</li>
   	    	</ul>
   	    </nav>
@@ -152,38 +160,46 @@
       </div>
     </main>
   	<footer class="page-footer main-footer">
+      <div class="grid-footer-wrapper">
   		<h2 hidden="">Навигация по сайту</h2>
-  		<section>
-  			<img src="img/-e-logo2.svg" width="163" height="35" alt="Логотип сайта «Девайс»">
-  		  <nav class="footer-login">
-          <ul class="footer-login-site">
-            <li><a href="">Войти</a></li>
-  			    <li><a href="">Сравнить</a></li>
-  			    <li><a href="">Корзина</a></li>
-  		    </ul>
-  	    </nav>
-  	  </section>
-  	  <section>
-  	    <nav class="footer-navigation">
-  	    	<ul class="footer-navigation-site">
-  	    		<li><a href="">Доставка</a></li>
-  				  <li><a href="">Гарантия</a></li>
-  				  <li><a href="">Контакты</a></li>
-  	    	</ul>
-  	    </nav>
-  	  </section>
-  	  <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-  	  <p class="footer-contacts">Тел.: <a class="contact-phone" href="tel: +74954959595">+7 (495) 495-95-95</a></p>
-  	  <section class="footer-social">
-  	    <h2>Социальные сети</h2>
-  	    <ul class="footer-social-list">
-  	    	<li><a class="social-button" href=""><img src="img/facebook-icon.svg" width="32" height="32" alt="Facebook"></a></li>
-  	    	<li><a class="social-button" href=""><img src="img/inst-icon.svg" width="32" height="32" alt="Инстаграм"></a></li>
-  	    	<li><a class="social-button" href=""><img src="img/twitter-icon.svg" width="32" height="32" alt="Твиттер"></a></li>
-  	    	</ul>
-  	  </section>
-  	  <h2>Лого HMTL-academy</h2>
-  	  <p class="footer-copyright"><img src="img/logo-html.svg" width="27" height="34"></p>
+  		<div class="grid-footer-1">
+        <a href="" class="main-header-logo"><img src="img/-e-logo2.svg" width="163" height="35" alt="Логотип сайта «Девайс»"></a>
+        <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div class="grid-footer-2">
+        <section>
+          <nav class="footer-navigation">
+            <ul class="footer-navigation-site">
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Гарантия</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-social">
+        <h2>Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li><a class="social-button" href=""><img src="img/facebook-icon.svg" width="32" height="32" alt="Facebook"></a></li>
+          <li><a class="social-button" href=""><img src="img/inst-icon.svg" width="32" height="32" alt="Инстаграм"></a></li>
+          <li><a class="social-button" href=""><img src="img/twitter-icon.svg" width="32" height="32" alt="Твиттер"></a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="grid-footer-3">
+        <section>
+          <nav class="footer-login">
+            <ul class="footer-login-site">
+              <li><a href="">Войти</a></li>
+              <li><a href="">Сравнить</a></li>
+              <li><a href="">Корзина</a></li>
+            </ul>
+          </nav>
+        </section>
+        <p class="footer-contacts">Тел.: <a class="contact-phone" href="tel: +74954959595">+7 (495) 495-95-95</a></p>
+        <h2>Лого HMTL-academy</h2>
+        <p class="footer-copyright"><img src="img/logo-html.svg" width="27" height="34"></p>
+      </div>
+    </div>
   	</footer>
   </body>
 </html>
