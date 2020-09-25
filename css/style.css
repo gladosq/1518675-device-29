@@ -212,16 +212,13 @@ img {
 	padding: 25px;
 }
 
-.site-menu {
+.site-menu,
+.catalog-list {
 	list-style-type: none;
 	font-family: "Gilroy", Arial, san-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
-}
-
-.site-menu {
-
 }
 
 .site-menu a:visited {
@@ -299,6 +296,19 @@ img {
 	opacity: 0.3;
 }
 
+.catalog-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style-type: none;
+	margin: 0;
+}
+
+.grid-filter {
+	width: 200px;
+	height: 600px;
+	outline: 2px solid tomato;
+}
+
 /* Grid */
 .main-header-logo {
 	justify-self: left;
@@ -348,6 +358,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	margin: 0;
+	padding-bottom: 70px;
 }
 
 .header-login {
@@ -364,4 +375,9 @@ img {
 	width: 160px;
 	height: 160px;
 	outline: 2px solid black;
+}
+
+.grid-filter-catalog {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
 }

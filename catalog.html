@@ -12,7 +12,10 @@
       <a href="" class="main-header-logo"><img src="img/-e-logo.svg" width="163" height="35" alt="Логотип сайта «Девайс»"></a>
       <nav class="header-navigation">
         <ul class="header-login">
-          <li><button type="button"><img src="img/vector-search.svg">Поиск по сайту</button>
+          <li>
+            <button type="button">
+              <img src="img/vector-search.svg">Поиск по сайту
+            </button>
             <input type="text" name="Поиск по сайту"></li>
           <li><a class="login-link" href=""><img src="img/login-header.svg">Войти</a></li>
           <li><a href=""><img src="img/exchange-header.svg">Сравнить</a></li>
@@ -28,7 +31,7 @@
         </ul>
       </nav>
     </header>
-  	<main>
+  	<main class="container">
   		<section>
   			<h1 class="slider-features">Моноподы для селфи</h1>
   			<nav class="nav-menu">
@@ -39,29 +42,48 @@
   				</ul>
   			</nav>
   		</section>
-  		<section>
-  			<h2>Фильтр товаров</h2>
-        <!--Форма фильтра товаров-->
-  		</section>
-      <section><h2>Сортировка товаров</h2>
-        <!--Форма сортировки товаров-->
-        <button type="button"></button>
-        <button type="button" disabled></button>
-      </section>
-  		<section>
-      <h2>Список товаров</h2>  
-      <ul class="site-menu">
-        <li><a href=""><img src="img/item-1-1.png" width="360" height="380" alt="Любительская селфи-палка"></a></li>
-        <p>Любительская селфи-палка <span class="product-features-property">500 руб.</span></p>
-        <li><a href=""><img src="img/item-2-1.png" width="360" height="380" alt="Профессиональная селфи-палка"></a></li>
-        <p>Профессиональная селфи-палка <span class="product-features-property">1500 руб.</span></p>
-        <li><a href=""><img src="img/item-3-1.png" width="360" height="380" alt="Непотопляемая селфи-палка"></a></li>
-        <p>Непотопляемая селфи-палка <span class="product-features-property">2500 руб.</span></p>
-        <li><a href=""><img src="img/new-icon.svg"><img src="img/item-4-1.png" width="360" height="380" alt="Селфи палка «Следуй за мной»"></a></li>
-        <p>Селфи палка «Следуй за мной» <span class="product-features-property">4900 руб.</span></p>
-      </ul>
-      </section>
       <section>
+          <h2 hidden="">Сортировка товаров</h2>
+          <!--Форма сортировки товаров-->
+          <button type="button"></button>
+          <button type="button" disabled></button>
+        </section>
+      <div class="grid-filter-catalog">
+        <section class="grid-filter">
+          <h2 hidden="">Фильтр товаров</h2>
+          <!--Форма фильтра товаров-->
+          Фильтр товаров
+  		  </section>
+  		  <section class="grid-catalog">
+          <h2 hidden="">Список товаров</h2>
+          <ul class="catalog-list">
+            <li>
+              <a href="">
+                <img src="img/item-1-1.png" width="360" height="380" alt="Любительская селфи-палка">
+              </a>
+              <p>Любительская селфи-палка <span class="product-features-property">500 руб.</span></p>
+            </li> 
+            <li>
+              <a href="">
+                <img src="img/item-2-1.png" width="360" height="380" alt="Профессиональная селфи-палка">
+              </a>
+              <p>Профессиональная селфи-палка <span class="product-features-property">1500 руб.</span></p>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/item-3-1.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </a>
+              <p>Непотопляемая селфи-палка <span class="product-features-property">2500 руб.</span></p>
+            </li>
+            <li>
+              <a href="">
+                <img src="img/new-icon.svg"><img src="img/item-4-1.png" width="360" height="380" alt="Селфи палка «Следуй за мной»">
+              </a>
+              <p>Селфи палка «Следуй за мной» <span class="product-features-property">4900 руб.</span></p>
+            </li>
+          </ul>
+        </section>
+      </div>
         <h2 hidden="">Пагинация</h2>
         <ul>
           <li><a href="">Вперёд</a></li>
@@ -73,38 +95,46 @@
       </section>
   	</main>
   	<footer class="page-footer main-footer">
-     <h2 hidden="">Навигация по сайту</h2>
-      <section>
-        <img src="img/-e-logo2.svg" width="163" height="35" alt="Логотип сайта «Девайс»">
-        <nav class="footer-login">
-          <ul class="footer-login-site">
-            <li><a href="">Войти</a></li>
-            <li><a href="">Сравнить</a></li>
-            <li><a href="">Корзина</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section>
-        <nav class="footer-navigation">
-          <ul class="footer-navigation-site">
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Гарантия</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-      </section>
-      <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-      <p class="footer-contacts">Тел.: <a class="contact-phone" href="tel: +74954959595">+7 (495) 495-95-95</a></p>
-      <section class="footer-social">
-        <h2>Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li><a class="social-button" href=""><img src="img/facebook-icon.svg" width="32" height="32" alt="Facebook"></a></li>
-          <li><a class="social-button" href=""><img src="img/inst-icon.svg" width="32" height="32" alt="Инстаграм"></a></li>
-          <li><a class="social-button" href=""><img src="img/twitter-icon.svg" width="32" height="32" alt="Твиттер"></a></li>
-          </ul>
-      </section>
-      <h2>Лого HMTL-academy</h2>
-      <p class="footer-copyright"><img src="img/logo-html.svg" width="27" height="34"></p>
+      <div class="grid-footer-wrapper">
+        <h2 hidden="">Навигация по сайту</h2>
+        <div class="grid-footer-1">
+          <a href="" class="main-header-logo"><img src="img/-e-logo2.svg" width="163" height="35" alt="Логотип сайта «Девайс»"></a>
+          <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+        </div>
+        <div class="grid-footer-2">
+          <section>
+            <nav class="footer-navigation">
+              <ul class="footer-navigation-site">
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Гарантия</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footer-social">
+            <h2>Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li><a class="social-button" href=""><img src="img/facebook-icon.svg" width="32" height="32" alt="Facebook"></a></li>
+              <li><a class="social-button" href=""><img src="img/inst-icon.svg" width="32" height="32" alt="Инстаграм"></a></li>
+              <li><a class="social-button" href=""><img src="img/twitter-icon.svg" width="32" height="32" alt="Твиттер"></a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="grid-footer-3">
+          <section>
+            <nav class="footer-login">
+              <ul class="footer-login-site">
+                <li><a href="">Войти</a></li>
+                <li><a href="">Сравнить</a></li>
+                <li><a href="">Корзина</a></li>
+              </ul>
+            </nav>
+          </section>
+          <p class="footer-contacts">Тел.: <a class="contact-phone" href="tel: +74954959595">+7 (495) 495-95-95</a></p>
+          <h2>Лого HMTL-academy</h2>
+          <p class="footer-copyright"><img src="img/logo-html.svg" width="27" height="34"></p>
+        </div>
+      </div>
     </footer>
   </body>
  </html>
