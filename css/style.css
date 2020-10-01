@@ -72,6 +72,7 @@ body {
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
+	overflow-x: hidden;
 }
 
 img {
@@ -250,8 +251,15 @@ img {
 	display: grid;
 }
 
-.features {
+.features::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
 	background-color: var(--basic-grey-light);
+	width: 300%;
+	height: 288px;
+	left: 0px;
+	margin-top: 50px;
 }
 
 .button-yellow,
@@ -263,19 +271,35 @@ img {
 	text-align: center;
 	text-transform: uppercase;
 	background-color: var(--basic-yellow-dark);
-	vertical-align: center;
-	height: 8px;
 	border: none;
+	height: 8px;
+	width: 220px;
 }
+
+.button-yellow::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	height: 8px;
+	width: 220px;
+	background-color: var(--basic-yellow-dark);
+}
+
+.button-features {
+	width: 160px;
+	}
 
 .page-footer {
 	color: var(--basic-white);
 	background-color: var(--basic-dark);
 }
 
-.button-yellow:hover,
-.button-features:hover {
+.button-yellow:hover::before,
+.button-features:hover::before {
+	content: "";
 	height: 40px; 
+	position: absolute;
+	background-color: var(--basic-yellow-dark);
 }
 
 .button-yellow:active,
@@ -358,7 +382,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	margin: 0;
-	padding-bottom: 70px;
+	margin-bottom: 200px;
 }
 
 .header-login {
