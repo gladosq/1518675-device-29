@@ -21,68 +21,91 @@
   		</nav>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
-  				<li><a href="catalog.html">Каталог товаров<img src="img/icon_plus.svg"></a></li>
-  				<li><a href="">Доставка</a></li>
+  				<li class="catalog-decoration"><a href="catalog.html">Каталог товаров<img src="img/icon_plus.svg"></a></li>
+  				<li class="rectangle-decoration"><a href="">Доставка</a></li>
   				<li><a href="">Гарантия</a></li>
   				<li><a href="">Контакты</a></li>
   			</ul>
   		</nav>
+      <div class="catalog-menu">
+        <div class="catalog-menu-block">
+          <div><a href="">Виртуальная реальность</a></div>
+          <div><a href="">Моноподы для селфи</a></div>
+          <div><a href="">Экшн-камеры</a></div>
+        </div>
+        <div class="catalog-menu-block">
+          <div><a href="">Фитнес-браслеты</a></div>
+          <div><a href="">Умные часы</a></div>
+        </div>
+        <div class="catalog-menu-block">
+          <div><a href="">Квадрокоптер</a></div>
+        </div>
+      </div>
   	</header>
   	<main class="container">
   		<section class="top-sale">
         <!-- First slider -->
-        <h2 hidden="">Товар и его описание</h2>
-        <section class="product-features-1">
+        <section class="product-features-1 slide">
+          <h2 hidden="">Палка для селфи</h2>
           <div class="features-grid-left">
             <img src="img/slider-1-1.png" width="384" height="486" alt="Палка для селфи">
           </div>
           <div class="features-grid-right">
             <p class="slider-features"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
             <p class="slider-property">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p><button class="button-yellow">Подробнее</button></p>
             <h2 hidden="">Характеристики товара</h2>
             <div class="product-features-value">
-            <span>8,5 м</span><span>5 кг</span><span>Карбон</span>
+              <span>8,5 м</span><span>5 кг</span><span>Карбон</span>
             </div>
             <div class="product-features-property">
-            <span> Длина палки</span><span> Вес палки</span><span> Материал</span>
+              <span> Длина палки</span><span> Вес палки</span><span> Материал</span>
             </div>
-            <p><button class="button-yellow">Подробнее</button>
-            <button class="radio-button" type="button" disabled></button>
-            <button class="radio-button" type="button"></button>
-            <button class="radio-button" type="button"></button>
-            </p>
           </div>
         </section>
         <!-- Second slider -->
-        <!--
-        <section class="product-features-2">
-          <img src="img/slider-2-1.png" width="345" height="485" alt="Фитнес-браслет">
-          <p class="slider-features"><b>Худеем<br>правильно!</b></p>
-          <p class="slider-property">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
-          <h2 hidden="">Характеристики товара</h2>
-          <div class="product-features-value">
-            <span>48 часов</span>
+        <section class="product-features-2 slide slider-current">
+          <h2 hidden="">Фитнес-браслет</h2>
+          <div class="features-grid-left">
+            <img src="img/slider-2-1.png" width="345" height="485" alt="Фитнес-браслет">
           </div>
-          <div class="product-features-property">
-            <span>Без подзарядки</span>
+          <div class="features-grid-right">
+            <p class="slider-features"><b>Худеем<br>правильно!</b></p>
+            <p class="slider-property">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+            <p><button class="button-yellow">Подробнее</button></p>
+            <h2 hidden="">Характеристики товара</h2>
+            <div class="product-features-value">
+              <span>48 часов</span>
+            </div>
+            <div class="product-features-property">
+              <span>Без подзарядки</span>
+            </div>
           </div>
         </section>
-        -->
         <!--Third slider -->
-        <!--
-        <section class="product-features-3">
-          <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
-          <p class="slider-features"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
-          <p class="slider-property">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
-          <h2 hidden="">Характеристики товара</h2>
-          <div class="product-features-value">
-            <span>800 м</span><span>50 м</span>
+        <section class="product-features-3 slide">
+          <h2 hidden="">Палка для селфи</h2>
+          <div class="features-grid-left">
+            <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
           </div>
-          <div class="product-features-property">
-            <span>Дальность полёта</span><span>Радиус поражения</span>
+          <div class="features-grid-right">
+            <p class="slider-features"><b>Порхает как бабочка,<br>жалит как пчела!</b></p>
+            <p class="slider-property">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+            <p><button class="button-yellow">Подробнее</button></p>
+            <h2 hidden="">Характеристики товара</h2>
+            <div class="product-features-value">
+              <span>800 м</span><span>50 м</span>
+            </div>
+            <div class="product-features-property property-fix">
+              <span>Дальность поражения</span><span>Радиус поражения</span>
+            </div>
           </div>
         </section>
-        -->
+        <div class="slider-controls">
+          <button class="button current" type="button" aria-label="Первый слайд"></button>
+          <button class="button" type="button" aria-label="Второй слайд"></button>
+          <button class="button" type="button" aria-label="Третий слайд"></button>
+        </div>
       </section>
   	  <section class="site-menu-container">
   	    <h2 hidden="">Навигация по сайту</h2>
@@ -128,20 +151,20 @@
   	    </nav>
   	  </section>
   	  <section class="features">
+        <nav class="features-navigation">
+          <ul class="features-list">
+            <li class="feature-item"><button class="button-features" type="button">Доставка</button></li>
+            <li class="feature-item"><button class="button-features" type="button">Гарантия</button></li>
+            <li class="feature-item"><button class="button-features" type="button">Кредит</button></li>
+          </ul>
+        </nav>
         <div class="features-name">
-          <h2 class="large-title">Доставка</h2>
+          <h2 class="large-title rectangle-decoration-2">Доставка</h2>
           <p class="small-info">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
         </div>
         <div class="features-image">
           <img src="img/delivery-2.svg" width="200" height="160" alt="Рисунок человечка">
   	    </div>
-  	    <nav>
-  	    	<ul class="features-list">
-  	    		<li class="feature-item"><button class="button-features" type="button">Доставка</button></li>
-  	    		<li class="feature-item"><button class="button-features" type="button">Гарантия</button></li>
-  	    		<li class="feature-item"><button class="button-features" type="button">Кредит</button></li>
-  	    	</ul>
-  	    </nav>
   	  </section>
   	  <section>
         <h2 hidden="">Логотипы фирм</h2>

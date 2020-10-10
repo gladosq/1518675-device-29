@@ -52,7 +52,28 @@
         <section class="grid-filter">
           <h2 hidden="">Фильтр товаров</h2>
           <!--Форма фильтра товаров-->
-          Фильтр товаров
+          <form method="get">
+            <fieldset class="filter-item">
+              <legend>Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="5000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
   		  </section>
   		  <section class="grid-catalog">
           <h2 hidden="">Список товаров</h2>
