@@ -12,9 +12,12 @@
   		<a href="" class="main-header-logo"><img src="img/-e-logo.svg" width="163" height="35" alt="Логотип сайта «Девайс»"></a>
   		<nav class="header-navigation">
   			<ul class="header-login">
-  				<li><button type="button"><img src="img/vector-search.svg">Поиск по сайту</button>
-            <input type="text" name="Поиск по сайту"></li>
-  				<li><a class="login-link" href=""><img class="header-icon" src="img/login-header.svg">Войти</a></li>
+  				<li>
+            <form class="search-page" method="post">
+              <label for="search-page"><img src="img/vector-search.svg"></label>
+              <input id="search-page" type="text" name="search-page" placeholder="Поиск по сайту">
+            </form>
+          <li><a class="login-link" href=""><img class="header-icon" src="img/login-header.svg">Войти</a></li>
   				<li><a href=""><img class="header-icon" src="img/exchange-header.svg">Сравнить</a></li>
   				<li><a href=""><img class="header-icon" src="img/cart-header.svg">Корзина</a></li>
   			</ul>
@@ -44,7 +47,7 @@
   	</header>
   	<main class="container">
   		<section class="top-sale">
-        <section class="product-features-1 slide">
+        <section class="product-features-1 slide visually-hidden">
           <h2 hidden="">Палка для селфи</h2>
           <div class="features-grid-left">
             <img src="img/slider-1-1.png" width="384" height="486" alt="Палка для селфи">
@@ -80,7 +83,7 @@
             </div>
           </div>
         </section>
-        <section class="product-features-3 slide visually-hidden">
+        <section class="product-features-3 slide">
           <h2 hidden="">Палка для селфи</h2>
           <div class="features-grid-left">
             <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
@@ -182,9 +185,6 @@
             <img src="img/credit1.svg" width="156" height="188" alt="Рисунок человечка, несущего кредитку">
           </div>
         </div>
-          
-
-
   	  </section>
   	  <section>
         <h2 hidden="">Логотипы фирм</h2>
@@ -210,17 +210,33 @@
   		  <section class="appointment">
   			  <h2 class="large-title">Контакты</h2>
   			  <p class="main-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки. Всякое бывает.</p>
-          <section class="modal modal-map">
-            <img src="img/map-1.png">
             <h2 hidden="">Как к нам попасть</h2>
-            <!-- Здесь будет попап карты -->
+            <img class="modal-map-show" src="img/map-1.png">
+  			  <div class="button-yellow-decoration"><button class="button-yellow-modal button-feedback" type="button">Напишите нам</button></div>
+          <section class="modal modal-feedback">
+            <form class="feedback-form">
+              <ul class="feedback-list">
+                <li class="feedback-item">
+                  <label>Ваше имя:</label>
+                  <input class="feed-name" type="" name="">
+                </li>
+                <li class="feedback-item">
+                  <label>Ваш e-mail:</label>
+                  <input class="feed-email" type="" name="">
+                </li>
+                <li class="feedabck-item">
+                  <label>Текст письма:</label>
+                  <input class="feed-text" type="" name="">
+                </li>
+                  <button class="button-feedback-submit"></button>
+                </ul>
+            </form>
             <button class="modal-close-button" type="button"></button>
           </section>
-  			  <div class="button-yellow-decoration"><button class="button-yellow-modal modal-2" type="button">Напишите нам</button></div>
-          <section class="modal modal-feedback">
-            <!-- Здесть будет попап обратной связи -->
-          <button class="modal-close-button" type="button"></button>
-          </section>
+        </section>
+        <section class="modal modal-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1603284223216!5m2!1sru!2sru" width="994" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <button class="map-close-button" type="button" aria-label="Закрыть">ЗАКРЫТЬ</button>
         </section>
       </div>
     </main>
@@ -244,9 +260,9 @@
           <section class="footer-social">
             <h2 hidden="">Социальные сети</h2>
             <ul class="footer-social-list">
-              <li><a class="social-button" href=""><img src="img/facebook-icon.svg" width="32" height="32" alt="Facebook"></a></li>
-              <li><a class="social-button" href=""><img src="img/inst-icon.svg" width="32" height="32" alt="Инстаграм"></a></li>
-              <li><a class="social-button" href=""><img src="img/twitter-icon.svg" width="32" height="32" alt="Твиттер"></a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span><img src="img/facebook-icon.svg" width="32" height="32" alt="Facebook"></a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Инстаграм</span><img src="img/inst-icon.svg" width="32" height="32" alt="Инстаграм"></a></li>
+              <li><a class="social-button" href=""><span class="visually-hidden">Твиттер</span><img src="img/twitter-icon.svg" width="32" height="32" alt="Твиттер"></a></li>
             </ul>
           </section>
         </div>
@@ -266,5 +282,7 @@
         </div>
       </div>
   	</footer>
+    <script src="js/feedback.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
