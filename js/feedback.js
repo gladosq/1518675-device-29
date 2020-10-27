@@ -19,7 +19,7 @@ feedbackClose.addEventListener('click', function (evt) {
 feedbackForm.addEventListener('submit', function (evt) {
 	if (!feedName.value || !feedEmail.value || !feedText.value) {
 		evt.preventDefault();
-		console.log('ASFASFASF FORAMA');
+		console.log('Введите текст');
 	} 
 });
 
