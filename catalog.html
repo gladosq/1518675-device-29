@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="page-body inner-page">
   	<header class="main-header inner-header">
@@ -29,16 +29,16 @@
             <a class="catalog-hover-menu" href="catalog.html">Каталог товаров</a>
             <div class="catalog-menu">
               <div class="catalog-menu-block">
-                <p><a href="">Виртуальная реальность</a><p>
-                <p><a href="">Моноподы для селфи</a></p>
-                <p><a href="">Экшн-камеры</a></p>
+                <p><a href="catalog/vr.html">Виртуальная реальность</a><p>
+                <p><a href="catalog/monopods.html">Моноподы для селфи</a></p>
+                <p><a href="catalog/action_cameras.html">Экшн-камеры</a></p>
               </div>
               <div class="catalog-menu-block">
-                <p><a href="">Фитнес-браслеты</a></p>
-                <p><a href="">Умные часы</a></p>
+                <p><a href="catalog/fitness_bracelet.html">Фитнес-браслеты</a></p>
+                <p><a href="catalog/smart_watch.html">Умные часы</a></p>
               </div>
               <div class="catalog-menu-block">
-                <p><a href="">Квадрокоптер</a></p>
+                <p><a href="catalog/quadcopter.html">Квадрокоптер</a></p>
               </div>
             </div>
           </li>
@@ -59,20 +59,37 @@
   				</ul>
   			</nav>
   		</section>
-      <div class="background-grid-wrapper">
-        <div class="catalog-left-wrapper">
-          <div class="wrapper-decoration-top">
-            <div class="filter-top-decoration">
-              <p class="filter-content-top">Фильтр:</p>
+      <div class="wrapper-grid-top">
+        <div class="grid-decoration-left"></div>
+        <div class="grid-center-content">
+          <div class="content-left-block">
+            <p class="filter-content-top">Фильтр:</p>
+          </div>
+          <div class="content-right-block">
+            <p class="sorting-title">Сортировка: </p>
+            <ul class="sorting-list">
+              <li class="sorting-item current-sorting-item"><a href="">По цене</a></li>
+              <li class="sorting-item"><a href="">По типу</a></li>
+              <li class="sorting-item"><a href="">По популярности</a></li>
+            </ul>
+            <div class="filter-arrows">
+              <button class="filter-up-button" type="button" disabled=""><img src="img/catalog-button-on.svg" width="10" height="11" alt="Фильтрация товаров по возрастанию"></button>
+              <button class="filter-down-button" type="button"><img src="img/catalog-button-on.svg" width="10" height="11" alt="Фильтрация товаров по убыванию"></button>
             </div>
           </div>
-          <div class="wrapper-decoration-bottom">
+        </div>
+        <div class="grid-decoration-right"></div>
+      </div>
+      <div class="wrapper-grid-bottom">
+        <div class="grid-decoration-left"></div>
+        <div class="grid-center-content">
+          <div class="content-left-block">
+            <div class="mozilla-fix">
+              <div class="mozilla-fix-1"></div>
+              <div class="mozilla-fix-2"></div>
+              <div class="mozilla-fix-3"></div>
+            </div>
             <div class="filter-block">
-              <div class="decoration-mozilla-fix">
-                <div class="decoration-rect-1"></div>
-                <div class="decoration-rect-2"></div>
-                <div class="decoration-rect-3"></div>
-              </div>
               <form method="get" action="https://echo.htmlacademy.ru/">
                 <fieldset class="filter-item">
                   <legend class="filter-decoration">Стоимость</legend>
@@ -136,23 +153,7 @@
               </form>
             </div>
           </div>
-        </div>
-        <div class="catalog-right-wrapper">
-          <div class="catalog-top-decoration">
-            <div class="catalog-top-filter">
-              <p class="sorting-title">Сортировка:</p>
-              <ul class="sorting-list">
-                <li class="sorting-item current-sorting-item"><a href="">По цене</a></li>
-                <li class="sorting-item"><a href="">По типу</a></li>
-                <li class="sorting-item"><a href="">По популярности</a></li>
-              </ul>
-              <div class="filter-right-buttons">
-                <button class="filter-up-button" type="button" disabled=""><img src="img/catalog-button-on.svg" width="10" height="11" alt="Иконка стрелки"></button>
-                <button class="filter-down-button" type="button"><img src="img/catalog-button-on.svg" width="10" height="11" alt="Иконка стрелки"></button>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-bottom-decoration">
+          <div class="content-right-block"> 
             <section class="catalog-main-block">
               <ul class="catalog-list">
                 <li class="catalog-item">
@@ -209,7 +210,8 @@
             </section>
           </div>
         </div>
-      </div>
+        <div class="grid-decoration-right"></div>
+      </div> 
   	</main>
   	<footer class="page-footer main-footer">
       <div class="grid-footer-wrapper">
