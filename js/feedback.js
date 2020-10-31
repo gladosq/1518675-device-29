@@ -14,12 +14,15 @@ feedbackButton.addEventListener('click', function (evt) {
 feedbackClose.addEventListener('click', function (evt) {
 	evt.preventDefault();
 	feedbackPopup.classList.remove('modal-show');
+	feedbackPopup.classList.remove("modal-error");
 });
 
 feedbackForm.addEventListener('submit', function (evt) {
 	if (!feedName.value || !feedEmail.value || !feedText.value) {
 		evt.preventDefault();
-		console.log('Введите текст');
+		feedbackPopup.classList.remove("modal-error");
+		feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+		feedbackPopup.classList.add("modal-error");
 	} 
 });
 
@@ -28,6 +31,7 @@ window.addEventListener('keydown', function (evt){
 		if (feedbackPopup.classList.contains('modal-show')) {
 			evt.preventDefault();
 			feedbackPopup.classList.remove('modal-show');
+			feedbackPopup.classList.remove("modal-error");
 		}
 	}
 });
