@@ -405,6 +405,7 @@ img {
 
 .button-details {
 	min-height: 40px;
+	max-width: 350px;
 	background: linear-gradient(to bottom, var(--basic-white), var(--basic-white) 40%, var(--basic-yellow-dark) 40%, var(--basic-yellow-dark) 60%, var(--basic-white) 60%, var(--basic-white));
 	border: 0;
 	padding-left: 43px;
