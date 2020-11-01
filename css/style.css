@@ -366,7 +366,7 @@ img {
 }
 
 .button-filter {
-	height: 40px;
+	min-height: 40px;
 	background: linear-gradient(to bottom, var(--basic-grey-light), var(--basic-grey-light) 40%, var(--basic-yellow-dark) 40%, var(--basic-yellow-dark) 60%, var(--basic-grey-light) 60%, var(--basic-grey-light));
 	border: 0;
 	padding-left: 39px;
@@ -380,33 +380,27 @@ img {
 }
 
 .button-about-us {
-	height: 40px;
+	min-height: 40px;
 	background: linear-gradient(to bottom, var(--basic-white), var(--basic-white) 40%, var(--basic-yellow-dark) 40%, var(--basic-yellow-dark) 60%, var(--basic-white) 60%, var(--basic-white));
 	border: 0;
 	padding-left: 21px;
 	padding-right: 21px;
 }
 
-.button-write-us::before {
-	content: "";
-	position: absolute;
-	width: 260px;
-	height: 8px;
-	left: -40px;
-	top: 6px;
-	background-color: var(--basic-yellow-dark);
-	z-index: -1;
+.button-write-us {
+	display: inline-block;
+	background: linear-gradient(to bottom, var(--basic-white), var(--basic-white) 40%, var(--basic-yellow-dark) 40%, var(--basic-yellow-dark) 60%, var(--basic-white) 60%, var(--basic-white));
+	border: 0;
+	padding-left: 43px;
+	padding-right: 43px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.button-write-us:hover::before {
-	content: "";
-	position: absolute;
-	width: 260px;
-	height: 40px;
-	left: -40px;
-	top: -10px;
-	background-color: var(--basic-yellow-dark);
-	z-index: -1;
+.button-write-us:hover {
+	cursor: pointer;
+	background: linear-gradient(to bottom, var(--basic-yellow-dark) 0%, var(--basic-yellow-dark) 100%);
+
 }
 
 .button-details {
@@ -546,6 +540,7 @@ img {
 	background: transparent;
 	outline: none;
 	cursor: pointer;
+	font-size: 0;
 }
 
 .filter-up-button:hover,
@@ -722,23 +717,19 @@ img {
 
 .catalog-button-cart {
 	position: absolute;
-	top: 190px;
-	left: 115px;
-	background: transparent;
-	z-index: 0;
+	top: 175px;
+	left: 80px;
+	min-height: 40px;
+	background: linear-gradient(to bottom, transparent, transparent 40%, var(--basic-yellow-dark) 40%, var(--basic-yellow-dark) 60%, transparent 60%, transparent);
 	border: 0;
-	cursor: pointer;
+	padding-left: 39px;
+	padding-right: 35px;
+	z-index: 0;
 }
 
-.catalog-button-cart::before {
-	content: "";
-	position: absolute;
-	width: 200px;
-	height: 8px;
-	top: 7px;
-	left: -33px;
-	background-color: var(--basic-yellow-dark);
-	z-index: -1;
+.catalog-button-cart:hover {
+	cursor: pointer;
+	background: linear-gradient(to bottom, var(--basic-yellow-dark) 0%, var(--basic-yellow-dark) 100%);
 }
 
 .catalog-button-compare {
@@ -747,8 +738,8 @@ img {
 	font-size: 13px;
 	letter-spacing: 1px;
 	position: absolute;
-	top: 235px;
-	left: 98px;
+	top: 230px;
+	left: 94px;
 	background: transparent;
 	border: 0;
 	cursor: pointer;
@@ -777,14 +768,6 @@ img {
 
 .catalog-buttons-wrapper:hover .catalog-button-compare {
 	display: block;
-}
-
-.catalog-button-cart:hover::before {
-	content: "";
-	position: absolute;
-	top: -10px;
-	left: -34px;
-	height: 40px;
 }
 
 .catalog-button-compare:hover {
@@ -1560,7 +1543,7 @@ img {
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	left: 208px;
+	left: 232px;
 	background-image: url("../img/icon-plus.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -1569,7 +1552,7 @@ img {
 .catalog-hover-menu::after {
 	content: "";
 	position: absolute;
-	width: 40px;
+	width: 50px;
 	height: 22px;
 	left: 190px;
 }
@@ -2504,6 +2487,11 @@ img {
 .wrapper-grid-bottom .content-right-block {
 	min-width: 831px;
 }
+
+.catalog-hover-menu {
+	letter-spacing: 0.2em;
+}
+
 
 /* Animations */
 @keyframes shake-error {
