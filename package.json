@@ -1,0 +1,15 @@
+{
+  "name": "htmlacademy-device",
+  "version": "1.0.0",
+  "description": "* Студент: [Никита Шишкин](https://up.htmlacademy.ru/htmlcss/29/user/1518675). * Наставник: [Ярослав Ярош](https://htmlacademy.ru/profile/id1416501).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gladosq/1518675-device-29.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
