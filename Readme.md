@@ -3,38 +3,22 @@
 * Студент: [Никита Шишкин](https://up.htmlacademy.ru/htmlcss/29/user/1518675).
 * Наставник: [Ярослав Ярош](https://htmlacademy.ru/profile/id1416501).
 
----
+## Техническое задание
+Фиксированная вёрстка сайта для десктопа.
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
+## Открыть [Demo](https://gladosq.github.io/htmlacademy-device/)
 
----
+## Установка
+Перед запуском необходимо установить следующие компоненты:
+- [x] [Node.js](https://nodejs.org/)
+- [x] [Gulp](https://gulpjs.com/)
+- [x] [npm](https://www.npmjs.com/)
 
-### Памятка
+## Запуск
+- [x] Установить зависимости – `npm i`
+- [x] Собрать билд и запустить локальный сервер – `npm run start`
 
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1518675-device-29) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038004-a420d688-7bae-11e7-9a40-8f72e1f3cac4.jpg">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038006-a4ff0afc-7bae-11e7-9786-c06aa082f7a4.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038009-a63d0cca-7bae-11e7-9c84-95e21fcbff13.jpg">
-
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
+*Исходники в папке* `sourse`*, готовый билд - в папке* `build`
 
 ---
 
