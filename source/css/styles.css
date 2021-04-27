@@ -652,7 +652,7 @@ img {
 
 .sorting-list {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	margin-right: 150px;
 	list-style-type: none;
 	align-items: center;
@@ -1823,7 +1823,7 @@ img {
 
 .pagination-forward a,
 .pagination-back a {
-	color: color: var(--basic-black);
+	color: var(--basic-black);
 }
 
 .pagination-forward:visited,

@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const sourcemap = require('gulp-sourcemaps');
-const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const csso = require('postcss-csso');
@@ -15,7 +14,7 @@ const del = require('del');
 const svgstore = require("gulp-svgstore");
 
 const styles = () => {
-	return gulp.src('source/sass/styles.scss')
+	return gulp.src('source/css/styles.css')
 		.pipe(plumber())
 		.pipe(sourcemap.init())
 		.pipe(postcss([
@@ -121,7 +120,7 @@ const reload = (done) => {
 exports.reload = reload;
 
 const watcher = () => {
-	gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+	gulp.watch('source/css/**/*.css', gulp.series(styles));
 	gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
